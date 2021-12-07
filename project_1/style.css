@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;900&family=Corinthia&family=Montserrat:wght@100&display=swap');
+/*  fonts:
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+
+
+/*#region: Global */
+:root {
+    --bg-main: #161616;
+    --bg-second: #eba83a45;
+    --bg-third: #346751;
+    --font-color-main: #f0f8ff; /* #DDD*/
+    --font-color-img: #a2a2a2;
+    --font-color-quote: #a5b6b4; 
+    --link-color: #1ca5ac;
+    --link-color-hover: #eba83a45;
+}
+
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--font-color-main); 
+    font-family: 'Cairo', sans-serif;
+}
+
+header, 
+section,
+footer {
+    padding: 30px 10px;
+    text-align: center;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: #1ca5ac;
+    font-weight: 500
+}
+
+a:hover{
+    color:#D06224
+}
+/*#endregion*/
+
+/*#region: header*/
+header {
+    padding-bottom: 0;
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-family: 'Corinthia', cursive;
+    font-size: 12vw;
+}
+/*#endregion*/
+
+/*#region: cover*/
+.cover figure {
+    cursor: pointer;
+}
+
+.cover img {
+        max-width: 80vw;
+        margin: 0 auto;
+        display: block;
+        border-radius: 3px;
+        box-shadow: 1px 1px #353433;
+}
+    
+    .cover figcaption {
+        margin: 0 auto;
+        width: 75vw;
+        font-style: italic;
+        line-height: 25px;
+        color: var(--font-color-img);
+    }
+    
+/*#endregion*/
+    
+/*#region: user info*/
+.info {
+    padding: 45px;
+    background-color: var(--bg-second);
+}
+    /*#region: user story*/
+    .user-story h3 {
+        font: 200 35px/1.3 'Cairo';
+        margin-bottom: 35px
+    }
+
+    .user-story ul {
+        text-align: left;
+        margin: 0 auto;
+        width: 70vw
+    }
+    .user-story li {        
+        list-style-type: circle;
+        margin-bottom: 5px;
+        
+    }
+
+        .user-story time {
+            font-weight: bold;
+        }
+
+        .user-story time::after {
+            content: " - "
+        }
+    /*#endregion*/
+
+    
+    /*#region: quote*/
+    .quote {
+        width: 50vw;
+        border-radius: 9px;
+        box-shadow: 1px 1px #374b43 ;
+        background-color: var(--bg-third);
+        padding: calc(2vw + 2vh);
+        margin: 40px auto 20px;
+    }
+
+    .quote figcaption {
+        text-align: left;
+        margin-top: 15px;
+        font-style: italic;
+    }
+
+    .quote figcaption::before {
+        content: '-- ';
+        color: var(--font-color-quote);
+    }
+
+    .quote blockquote::before,
+    .quote blockquote::after {
+        content: ' " ';
+        font-weight: bold;
+        color: var(--font-color-quote);
+    }
+    /*#endregion*/
+
+/*#endregion*/
+
+
+/* mobile view */
+@media (max-width: 700px) {
+
+    .quote {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+}
