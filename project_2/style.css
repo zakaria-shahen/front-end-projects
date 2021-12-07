@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;900&family=Montserrat:wght@100&display=swap');
+/* fonts
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+/*#region: Global*/
+* {
+    margin: 0;
+    padding: 0; 
+    border: 0;
+}
+
+body {
+    background:  url('image/cover.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    
+}
+
+body::before{
+    content: "";
+    background-color: #29729462; 
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+
+main {
+    padding-bottom: 10vw;
+}
+
+/*#endregion*/
+
+ /*#region: header*/
+header{
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0
+}
+ /*#endregion*/
+
+
+/*#region: section*/
+section {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    padding: 60px;
+    border-radius: 5px;
+    margin: 20px auto;
+    background-color: #04030359;
+    color: #fff;
+}
+
+     /*#region: form*/
+    .form {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    .form div {
+        overflow: hidden;
+    }
+    .form label {
+        display: block;
+        margin-left: 5px;
+        font-weight: 400;
+    }
+
+        .form label span {
+            font: italic 200 15px 'Cairo'
+        }
+
+    .form input[name="name"],
+    .form input[type="number"],
+    .form input[type="email"],
+    .form textarea,
+    .form select {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 15px;
+        width: 100%;
+        margin: 8px auto 25px;
+    }
+
+    .form select {
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #526264;
+    }
+    .form input {
+        font-size: 17px;
+    }
+    .form input[name="name"]:focus,
+    .form input[type="number"]:focus,
+    .form input[type="email"]:focus,
+    .form textarea:focus {
+        border: 1px solid #566b6e;
+        outline: none;
+    }
+
+    textarea{
+        height: 200px;
+    }
+
+    .radioGroup,
+    .checkboxGroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        justify-content: center
+    }
+
+
+        .radioGroup div,
+        .checkboxGroup div {
+            display: inline-flex;
+            width: 200px;
+            margin: 10px 0;
+            align-items: center;
+        }
+
+            .radioGroup label,
+            .checkboxGroup label {
+                cursor: pointer;
+            }
+
+
+            .checkboxGroup input[type="checkbox"],
+            .radioGroup input[type="radio"] {
+                width: 17px;
+                height: 17px;
+            }
+
+
+    .form input[type="submit"]{
+        width: 100%;
+        padding: 25px;
+        border: 0;
+        border-radius: 3px;
+        background-color: #02475E;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        /* font-weight: 900; */
+    }
+
+    .form input[type="submit"]:hover{
+        background-color: #086375;
+        transition: 300ms;
+    }
+
+ /*#endregion*/
+
+
+ /*#region: mobile view*/
+@media (max-width: 700px) {
+    section {
+        width: 80vw;
+        padding: 5vh 6vw;
+    }
+
+}
+/*#endregion*/
