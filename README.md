@@ -1,6 +1,6 @@
 ## front-end projects
 
-[https://zakaria-shahen.github.io/front-end-projects/index.html](https://zakaria-shahen.github.io/front-end-projects/index.html)
+[https://front-end-projects.netlify.app/](https://front-end-projects.netlify.app/)
 
 ### index
 
