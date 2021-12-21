@@ -105,6 +105,10 @@ input[type="submit"]:hover {
         width: 85vw;
     }
 
+    #features > div {
+        gap: 15px;
+    }
+
     #features>div,
     #pricing {
         display: flex;
