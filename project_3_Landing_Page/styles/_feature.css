@@ -1,0 +1,18 @@
+
+#features > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+ 
+
+.feature-icon {
+    width: 6vw
+}
+
+.feature-text {
+    width: 60vw
+} 

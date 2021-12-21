@@ -1,0 +1,34 @@
+#pricing {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    width: 200px;
+    text-align: center;
+    background-color: var(--three-color);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+.card h4 {
+    font-size: 22px;
+}
+
+
+.card li {
+    list-style: none;
+}
+
+.card li:first-child {
+    font-size: 19px;
+}
+
+
+.card button {
+    margin-top: 20px;
+    width: 100px;
+    padding: 5px;
+}

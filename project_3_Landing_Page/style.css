@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;900');
+@import url('./styles/_variable.css');
+
+
+@import url('./styles/_header.css');
+@import url('./styles/_subscribe.css');
+@import url('./styles/_feature.css');
+@import url('./styles/_works.css');
+@import url('./styles/_pricing.css');
+@import url('./styles/_footer.css');
+
+
+
+/*#region: Root styling */
+* {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--first-color);
+    color: var(--second-color);
+
+
+}
+
+/*#endRegion*/
+
+
+/*#region: General*/
+button,
+input[type="submit"] {
+    width: 200px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--second-color);
+    font-size: 18px;
+    color: var(--three-color);
+    padding: 8px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    transition: 250ms;
+    background-color: var(--four-color);
+}
+
+/*#endregion*/
+
+@media (max-width: 600px) {
+
+    /*#region: Navbar toggle */
+
+    #header-img {
+        width: 30vw;
+    }
+
+    .navbarIcon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    nav ul li:first-child {
+        display: inline-block;
+        text-align: left;
+        font-size: 40px;
+        padding: 10px 50px;
+    }
+
+
+    nav li {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .showNav nav {
+        display: block;
+    }
+
+    .showNav div:first-child {
+        display: none !important;
+    }
+
+    /*#endregion*/
+
+
+    .subscribe input {
+        width: 200px;
+    }
+
+
+    #video {
+        width: 85vw;
+    }
+
+    #features>div,
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
