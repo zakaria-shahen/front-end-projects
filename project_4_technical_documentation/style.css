@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;900');
+
+@import url('./styles/_variable.css');
+@import url('./styles/_typography.css');
+@import url('./styles/_navbar.css');
+
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+    /*scrollbar support firefox and standard*/
+    scrollbar-color: var(--bg-scrollbar) var(--bg-scrollbar-thumb);
+    scrollbar-width: thin;
+}
+
+
+/*#region: scroll (support webkit Ex. chrome) non-standard*/
+*::-webkit-scrollbar {
+    /* scrollbar-color: red blue; */
+    background-color: var(--bg-scrollbar);
+    width: 11px;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bg-scrollbar-thumb);
+    border-radius: 10px;
+}
+
+/*#endregion */
+
+
+body {
+    background-color: var(--bg-main);
+    color: var(--font-main);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    padding: 7vw 5vw 7vw 0;
+    margin-left: 28vw;
+}
+
+
+@media (max-width: 800px) {
+    
+    body {
+        display: block;
+    }
+    
+    header {
+        width: 100vw;
+        position: fixed;
+        background-color: var(--bg-navbar-mobile);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header div:first-child {
+        width: auto;
+        padding: 0 inherit;
+    }
+    
+    
+    header nav {
+        display: none;
+    }
+    
+    /* button toggle */
+    #toggle-navbar {
+        margin-right: 30px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    
+    /*#region: showNavbar */
+    .showNavbar div:first-child,
+    .showNavbar #toggle-navbar {
+        display: none;
+    }
+    
+    .showNavbar nav {
+        display: block;
+        height: 100vh;
+        overflow: scroll;
+        
+    }
+    
+    .showNavbar li a {
+        width: 100vw;
+        padding: 15px 50px;
+        
+    }
+    
+    /*#endregion*/
+    
+    
+    main {
+        margin: auto;
+        padding: 20px 30px;
+    }
+    
+    main > div {
+        padding-top: 120px;
+    }
+    
+}

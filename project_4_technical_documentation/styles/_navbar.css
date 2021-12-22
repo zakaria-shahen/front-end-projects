@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    width: 22vw;
+}
+
+/*#region Logo */
+header div:first-child {
+    padding: 10px 30px;
+    text-align: center;
+}
+/*#endrgion */
+
+
+
+/*#region: navbar */
+header :where(nav, li, ul) {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+header nav {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+#toggle-navbar {
+    display: none;
+}
+
+
+header li {
+    display: flex;
+    overflow: visible;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--font-link-hover-nav);
+    background-color: var(--bg-link-hover-nav);
+}
+/*#endregion*/

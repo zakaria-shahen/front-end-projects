@@ -1,0 +1,46 @@
+code, pre, .code {
+    display: block;
+    padding: 20px 40px;
+    background-color: var(--bg-code);
+    color: var(--font-code);
+    border-radius: 5px;
+}
+
+pre {
+    overflow-y: scroll;
+    padding: 0;
+}
+
+kbd {
+    background-color: var(--bg-code);
+    padding: 3px;
+    color: var(--font-code);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+main div > h3 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: var(--bg-link-hover-nav)
+}
+
+main div > h3:hover::after {
+    content: "#";
+    cursor: pointer;
+    font-weight: 200;
+    font-style: italic;
+    margin-left: 20px;
+    color: var(--bg-scrollbar-thumb);
+}
+
+
+main a {
+    text-decoration: none;
+    color: var(--link-color)
+}
+
+main a:hover {
+    color: var(--link-hover)
+}

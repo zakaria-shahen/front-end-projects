@@ -1,0 +1,13 @@
+:root {
+    --bg-main: #191919;
+    --bg-code: #272822;
+    --font-main: #fff;
+    --font-code: #f8f8f2;
+    --link-hover: red;
+    --bg-navbar-mobile: #2F3032;
+    --font-link-hover-nav: #393E46;
+    --bg-link-hover-nav: #FFD369;
+    --bg-scrollbar: #444;
+    --bg-scrollbar-thumb: #7a7a7a;
+
+}
