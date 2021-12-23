@@ -40,18 +40,21 @@ body {
 }
 
 main {
-    padding: 7vw 5vw 7vw 0;
+    padding: 3vw 5vw 7vw 0;
     margin-left: 28vw;
 }
 
+.main-section {
+    padding-top: 50px;
+}
 
 @media (max-width: 800px) {
-    
+
     body {
         display: block;
     }
-    
-    header {
+
+    .header {
         width: 100vw;
         position: fixed;
         background-color: var(--bg-navbar-mobile);
@@ -59,54 +62,59 @@ main {
         justify-content: space-between;
         align-items: center;
     }
-    
-    header div:first-child {
+
+    .header div:first-child {
         width: auto;
-        padding: 0 inherit;
+        /* padding: 0 inherit; */
     }
-    
-    
-    header nav {
+
+
+    .header nav {
         display: none;
     }
-    
+
     /* button toggle */
     #toggle-navbar {
         margin-right: 30px;
         display: block;
         cursor: pointer;
     }
-    
-    
+
+
     /*#region: showNavbar */
     .showNavbar div:first-child,
     .showNavbar #toggle-navbar {
         display: none;
     }
-    
+
+    .showNavbar .closeIcon {
+        display: flex !important;
+        justify-content: end;
+    }
+
     .showNavbar nav {
         display: block;
         height: 100vh;
-        overflow: scroll;
-        
+        overflow-y: scroll;
+
     }
-    
+
     .showNavbar li a {
         width: 100vw;
         padding: 15px 50px;
-        
+
     }
-    
+
     /*#endregion*/
-    
-    
+
+
     main {
         margin: auto;
         padding: 20px 30px;
     }
-    
-    main > div {
+
+    .main-section {
         padding-top: 120px;
     }
-    
+
 }

@@ -1,0 +1,24 @@
+// ERD / ERD code
+
+table(table_name)(type_table=>weak / strong / super/ sub)(
+    PK(column1, column2),
+    FK([{
+        to: "table_name",
+        cres: [M, 1],
+        totalAndPart: {this: total, to: part}
+    }]),
+    MV(multi-value-column1)
+    CO(composet-column)(
+        column1,
+        column2,
+        CO(composet-column),
+    ),
+    CX(multi-value-column1)(
+        column1,
+        column2,
+       composet-column,
+    )
+)
+
+
+
