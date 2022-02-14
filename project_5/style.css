@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;900&family=Montserrat:wght@100&family=Readex+Pro:wght@500&display=swap');
+
+@import url("./styles/_variable.css");
+@import url("./styles/_navbar.css");
+@import url("./styles/_project.css");
+@import url("./styles/_profile-link.css");
+@import url("./styles/_footer.css");
+
+
+body {
+    margin: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+    /*scrollbar support firefox and standard*/
+    scrollbar-color: var(--bg-scrollbar) var(--bg-scrollbar-thumb);
+    scrollbar-width: thin;
+}
+
+
+/*#region: scroll (support webkit Ex. chrome) non-standard*/
+*::-webkit-scrollbar {
+    /* scrollbar-color: red blue; */
+    background-color: var(--bg-scrollbar);
+    width: 8px;
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bg-scrollbar-thumb);
+    border-radius: 8px;
+}
+/*#endregion */
+
+

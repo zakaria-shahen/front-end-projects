@@ -1,0 +1,32 @@
+#projects {
+    display: flex;
+}
+    
+    #projects figure {
+        text-align: center;
+        color: var(--font-color-main);
+        text-transform: capitalize;
+        border-radius: 3px;
+        cursor: pointer;
+        padding: 30px;
+        background-color: var(--bg-second);
+    }
+
+        #projects img {
+            width: 300px;
+            max-width: 80vw;
+            margin: 0 auto;
+            display: block;
+            border-radius: 3px;
+            box-shadow: 1px 1px var(--bg-second);;
+        }
+
+        #projects figcaption {
+            margin-top: 20px;
+        }
+
+        #projects figcaption a{
+            font-size: 17px;
+            color: inherit;
+            text-decoration: none;
+        }

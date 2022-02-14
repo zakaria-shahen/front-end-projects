@@ -1,0 +1,11 @@
+:root {
+    --bg-main: #efefef;
+    --bg-second: #C84B31;
+    --bg-three: #191919;
+    --font-color-main: #fff;
+    --font-color-links: orange;
+    --bg-links-main: brown;
+    --bg-links-hover: chocolate;
+    --bg-scrollbar: #444;
+    --bg-scrollbar-thumb: #7a7a7a;
+}

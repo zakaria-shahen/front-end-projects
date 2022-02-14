@@ -1,0 +1,92 @@
+header :where(nav, ul, li) {
+    padding: 0;
+    margin: 0;
+}
+
+.menu, .close {
+    display: none;    
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--bg-links-main);
+}
+
+nav li a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav li a:hover {
+    background-color: var(--bg-links-hover);
+}
+
+
+@media (max-width: 800px) {
+    .menu {
+        display: block;
+        font-size: 70px;
+        margin: 20px 50px;
+        padding: 0;
+        cursor: pointer;
+        color: var(--font-color-links);
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header ul {
+        display: block;
+        width: 80vw;
+        height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        right: -80vw;
+        transition: 1s;
+        z-index: 1;
+    }
+
+
+    #closeMenu {
+        font-size: 50px;
+        color: var(--font-color-main);
+        margin: 30px;
+        cursor: pointer;
+        width: 50px;
+        align-self: flex-end;        
+    }
+
+
+    #closeMenu:hover {
+         color: var(--bg-links-hover)
+    }
+
+    /*#region: Class Show menu  */
+    .showMenu nav, .close {
+        display: block;
+    }
+    
+    .showMenu .menu {
+        display: none;
+    }
+    .showMenu ul {
+        right: auto;
+    }
+    .showMenu::before {
+        display: flex;
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-color:rgba(0, 0, 0, 0.3);
+        backdrop-filter:calc(15px * 15px)
+    }
+    /*#endregion*/
+
+}
